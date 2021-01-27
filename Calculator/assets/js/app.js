@@ -39,7 +39,7 @@ function product(array){
 }
 
 (function () {
-    let choice = eval(prompt("Choose an operation\n 1 for addition by array \n 2 for by array multiplication \n 3 for subtraction \n 4 for division \n 5 for simple add \n 6 for simple mult"))
+    let choice = eval(prompt("Choose an operation\n 1 = Addition with array \n 2 = Multiplication with array \n 3 = Subtraction \n 4 = Division \n 5 = Addition of only two numbers \n 6 = Multiplication of only two numbers"))
     if (choice == 1 | choice == 2) {
       let par = new Array();
 

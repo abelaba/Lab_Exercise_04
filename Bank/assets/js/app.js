@@ -38,3 +38,28 @@ function withdrawal(amount,total) {
           console.log("Access granted your remanin balance is " + (total - amount));
     }
 }
+
+
+
+
+(function () {
+    let x = eval(prompt("Choose\n 1 = Deposit \n 2 = Withdrawal \n 3 = Transfer \n 4 = Balance" ));
+
+    var total = 600;
+    if (x==1 | x==2 |x==3 |x==5){
+        let amount = eval(prompt("Enter the Amount"));
+        if (x == 1) {
+            Deposit(amount,total);
+                    }
+        else if (x == 2) {
+            withdrawal(amount,total);
+            }
+        else if (x == 3) {
+            Transfer(amount,total);
+        }
+
+    }
+    else if(x==4){
+        balance(total);
+    }
+})()
